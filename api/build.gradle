@@ -1,0 +1,12 @@
+apply plugin: 'java'
+
+repositories {
+    flatDir {
+        dir '../libs'
+    }
+}
+
+dependencies {
+    compile project(':core')
+    implementation name: 'utils-1.3.5'
+}

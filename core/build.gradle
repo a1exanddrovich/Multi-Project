@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+group 'org.example'
+version '1.0.0'
+
+repositories {
+    flatDir {
+        dir '../libs'
+    }
+}
+
+dependencies {
+    implementation name: 'utils-1.3.5'
+}
